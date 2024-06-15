@@ -1,0 +1,79 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://getwallpapers.com/wallpaper/full/5/2/a/540278.jpg);
+    background-size: 1920px 1080px;
+    background-position: center;
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+h1 {
+    font-size: 6em;
+    color: yellow;
+    margin: 30px 0 0;
+    margin-top: 200px;
+}
+
+h2 {
+    font-size: 2em;
+    font-style: italic;
+    margin: 25px 0;
+}
+
+.box-container {
+    border: 2px solid yellow;
+    padding: 20px;
+    background-color: black;
+    width: 20%;
+    height: 300px;
+    margin: 9px auto;
+}
+
+.button-container {
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: yellow;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    transition: all 0.5s;
+}
+
+button:hover::before {
+    width: 0;
+    height: 0;
+}
